@@ -1,0 +1,4 @@
+id: '@uuid' # 用户ID
+username: '@word(6,12)' # 用户账号
+nickname: '@cword(3,8)' # 用户昵称
+email: '@email' # 邮箱

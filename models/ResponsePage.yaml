@@ -1,0 +1,2 @@
+total: '@number(20, 40)' # 数据总量
+hasNext: '@boolean' # 是否有下一页

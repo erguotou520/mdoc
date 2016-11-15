@@ -1,0 +1,10 @@
+api_version: 0.1.0
+api_prefix: v1
+descriptions:
+  http_code:
+    - '`200` 成功执行'
+    - '`401` 身份认证失败'
+    - '`500` 服务器内部错误'
+  'Content-Type':
+    - '`application/json` 默认'
+    - '`application/form-data` 上传文件时'

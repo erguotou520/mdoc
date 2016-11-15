@@ -1,0 +1,18 @@
+---
+module: users
+prefix: '/users'
+model: '#User'
+restful: true
+---
+restful:
+  query:
+    res: User
+change_password:
+  url: 'change_password'
+  title: 修改密码
+  method: POST
+  req:
+    old_password: '@word(8,12)' # required 旧密码
+    new_password: '@word(8,12)' # required 新密码
+  error_status: 403
+  error: '#common_error'

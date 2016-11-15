@@ -1,0 +1,12 @@
+---
+multi: true
+default: common_page
+---
+common_page:
+  page: '#RequestPage <<分页请求>>'
+common_search:
+  search: '#Search <<搜索>>'
+  page: '#RequestPage <<分页请求>>'
+common_multi_search:
+  search: '[#Search] <<多字段搜索>>'
+  page: '#RequestPage {{分页请求}}'
