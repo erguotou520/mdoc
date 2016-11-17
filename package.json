@@ -1,0 +1,29 @@
+{
+  "name": "mdoc",
+  "version": "0.0.1",
+  "description": "restful api doc tool and mock data",
+  "main": "index.js",
+  "dependencies": {
+    "js-yaml": "^3.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erguotou520/mdoc.git"
+  },
+  "keywords": [
+    "restful",
+    "api",
+    "doc",
+    "mock"
+  ],
+  "author": "erguotou525@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/erguotou520/mdoc/issues"
+  },
+  "homepage": "https://github.com/erguotou520/mdoc#readme"
+}

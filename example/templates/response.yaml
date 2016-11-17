@@ -1,0 +1,21 @@
+- common_results_page:
+  page:
+    model: ResponsePage
+    comment: 分页信息
+  results:
+    slot: true
+    comment: 数据列表
+- common_error:
+  code:
+    value: '@pick([401,403,404,500])'
+    comment: 请求结果code
+  message:
+    value: '@paragraph'
+    comment: 请求结果消息内容
+- common_success:
+  code:
+    value: 200
+    comment: 请求成功
+  message:
+    value: 'SUCCESS'
+    comment: 返回信息

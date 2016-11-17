@@ -1,0 +1,6 @@
+key:
+  value: '@word'
+  comment: 搜索的键
+value:
+  value: '@word'
+  comment: 搜索的值

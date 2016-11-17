@@ -1,0 +1,6 @@
+total:
+  value: '@number(20, 40)'
+  comment: 数据总量
+hasNext:
+  value: '@boolean'
+  comment: 是否有下一页

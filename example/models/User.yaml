@@ -1,0 +1,12 @@
+id:
+  value: '@uuid'
+  comment: 用户ID
+username:
+  value: '@word(6,12)'
+  comment: 用户账号
+nickname:
+  value: '@cword(3,8)'
+  comment: 用户昵称
+email:
+  value: '@email'
+  comment: 邮箱

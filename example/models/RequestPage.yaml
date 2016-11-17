@@ -1,0 +1,6 @@
+current:
+  value: '@number(1, 3)'
+  comment: 当前页
+limit:
+  value: 10
+  comment: 分页条目数

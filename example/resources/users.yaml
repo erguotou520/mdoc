@@ -1,0 +1,25 @@
+module: users
+name: 用户
+prefix: /users
+model: User
+restful: true
+change_password:
+  url: 'change_password'
+  title: 修改密码
+  method: POST
+  req:
+    old_password:
+      value: '@word(8,12)'
+      comment: 旧密码
+      required: true
+    new_password:
+      value: '@word(8,12)'
+      comment: 新密码,
+      required: true
+      validator:
+        - min_length: 8
+  res:
+    template: common_success
+  error_status: 403
+  error:
+    template: common_error
