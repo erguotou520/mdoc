@@ -4,7 +4,13 @@
   "description": "restful api doc tool and mock data",
   "main": "index.js",
   "dependencies": {
-    "js-yaml": "^3.7.0"
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "glob": "^7.1.1",
+    "js-yaml": "^3.7.0",
+    "method-override": "^2.3.7"
   },
   "devDependencies": {},
   "scripts": {

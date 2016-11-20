@@ -1,15 +1,15 @@
-- common_page:
+common_page:
   page:
     model: RequestPage
     comment: 分页请求
-- common_search:
+common_search:
   search:
     model: Search
     comment: 搜索
   page:
     model: RequestPage
     comment: 分页请求
-- common_multi_search:
+common_multi_search:
   search:
     model: [Search]
     comment: 多字段搜索

@@ -1,5 +1,5 @@
 api_version: '0.1.0'
-api_prefix: v1
+api_prefix: '/api'
 descriptions:
   http_code:
     - '`200` 成功执行'
@@ -8,3 +8,4 @@ descriptions:
   'Content-Type':
     - '`application/json` 默认'
     - '`application/form-data` 上传文件时'
+  others: '一些其它说明'
