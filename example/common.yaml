@@ -1,6 +1,19 @@
 api_version: '0.1.0'
 api_prefix: '/api'
+restful:
+  id: 'id'
+  query:
+    template: common_results_page
+  save:
+    res:
+      id: '@uuid'
+  update:
+    res:
+      id: '@uuid'
+  delete:
+    resStatus: 201
 descriptions:
+  Auth: 除`/login`请求外，其余请求都需要认证，认证方式xxx
   http_code:
     - '`200` 成功执行'
     - '`401` 身份认证失败'

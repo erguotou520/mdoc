@@ -3,7 +3,7 @@ common_results_page:
     model: ResponsePage
     comment: 分页信息
   results:
-    slot: true
+    slots: '10-20'
     comment: 数据列表
 common_error:
   code:

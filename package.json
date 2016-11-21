@@ -10,7 +10,8 @@
     "express": "^4.14.0",
     "glob": "^7.1.1",
     "js-yaml": "^3.7.0",
-    "method-override": "^2.3.7"
+    "method-override": "^2.3.7",
+    "mockjs": "^1.0.1-beta3"
   },
   "devDependencies": {},
   "scripts": {
