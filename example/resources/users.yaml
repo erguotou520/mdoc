@@ -1,8 +1,8 @@
 module: users
 name: 用户
 prefix: /users
-model: User
 restful: true
+restful_model: User
 resources:
   '/change_password':
     title: 修改密码
