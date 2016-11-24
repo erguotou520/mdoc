@@ -1,5 +1,5 @@
 current:
-  value: '@number(1, 3)'
+  value: '@natural(1, 3)'
   comment: 当前页
 limit:
   value: 10

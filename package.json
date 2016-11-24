@@ -3,19 +3,8 @@
   "version": "0.0.1",
   "description": "restful api doc tool and mock data",
   "main": "index.js",
-  "dependencies": {
-    "body-parser": "^1.15.2",
-    "compression": "^1.6.2",
-    "cookie-parser": "^1.4.3",
-    "express": "^4.14.0",
-    "glob": "^7.1.1",
-    "js-yaml": "^3.7.0",
-    "method-override": "^2.3.7",
-    "mockjs": "^1.0.1-beta3"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "example": "nodemon -w example -w lib example/run.js"
   },
   "repository": {
     "type": "git",
@@ -32,5 +21,14 @@
   "bugs": {
     "url": "https://github.com/erguotou520/mdoc/issues"
   },
-  "homepage": "https://github.com/erguotou520/mdoc#readme"
+  "homepage": "https://github.com/erguotou520/mdoc#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "glob": "^7.1.1",
+    "js-yaml": "^3.7.0",
+    "method-override": "^2.3.7",
+    "mockjs": "^1.0.1-beta3"
+  }
 }
