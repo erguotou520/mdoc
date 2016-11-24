@@ -4,6 +4,7 @@
   "description": "restful api doc tool and mock data",
   "main": "index.js",
   "scripts": {
+    "test": "./node_modules/.bin/mocha test/user.spec.js",
     "example": "nodemon -w example -w lib example/run.js"
   },
   "repository": {
@@ -30,5 +31,10 @@
     "js-yaml": "^3.7.0",
     "method-override": "^2.3.7",
     "mockjs": "^1.0.1-beta3"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "supertest": "^2.0.1"
   }
 }
