@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test/user.spec.js",
+    "build": "./node_modules/.bin/babel -w src/ -d dist/",
+    "dev": "node dist",
     "example": "nodemon -w example -w lib example/run.js"
   },
   "repository": {
@@ -24,10 +26,8 @@
   },
   "homepage": "https://github.com/erguotou520/mdoc#readme",
   "dependencies": {
-    "babel-core": "^6.18.2",
-    "babel-polyfill": "^6.16.0",
-    "babel-preset-es2015": "^6.18.0",
     "body-parser": "^1.15.2",
+    "colors": "^1.1.2",
     "compression": "^1.6.2",
     "cookie-parser": "^1.4.3",
     "express": "^4.14.0",
@@ -39,7 +39,14 @@
     "stylus": "^0.54.5"
   },
   "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
     "chai": "^3.5.0",
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
     "mocha": "^3.1.2",
     "supertest": "^2.0.1"
   }

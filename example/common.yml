@@ -1,6 +1,5 @@
 api_version: '0.1.0'
 api_prefix: '/api'
-theme: 'default'
 restful:
   id: 'id'
   query:
