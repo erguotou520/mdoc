@@ -1,6 +1,7 @@
 api_version: '0.1.0'
 api_prefix: '/api'
 theme: 'default'
+doc_prefix: '__doc__'
 restful:
   id: 'id'
   query:

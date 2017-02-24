@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha test/user.spec.js",
-    "example": "nodemon -w example -w lib example/run.js"
+    "example": "nodemon -w example -w views -w lib example/run.js"
   },
   "repository": {
     "type": "git",
