@@ -1,7 +1,7 @@
 api_version: '0.1.0'
 api_prefix: '/api'
 theme: 'default'
-doc_prefix: '__doc__'
+doc_prefix: '/__doc__'
 restful:
   id: 'id'
   query:
@@ -15,12 +15,14 @@ restful:
   delete:
     resStatus: 201
 descriptions:
-  Auth: 除`/login`请求外，其余请求都需要认证，认证方式xxx
-  http_code:
+  '用户身份认证':
+    - 除`/login`请求外，其余请求都需要认证，认证方式xxx
+  'http状态码说明':
     - '`200` 成功执行'
     - '`401` 身份认证失败'
     - '`500` 服务器内部错误'
   'Content-Type':
     - '`application/json` 默认'
     - '`application/form-data` 上传文件时'
-  others: '一些其它说明'
+  '其它说明':
+    - '一些其它说明'

@@ -1,0 +1,59 @@
+.api-block {
+  padding: 0 0.75rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  border-radius: 2px;
+  font-size: 0.75rem;
+}
+.api-block + .api-block {
+  margin-top: 1rem;
+}
+.api-block.method-get {
+  background-color: #cbecf5;
+  border: 1px solid #53bddc;
+}
+.api-block.method-get .api-method {
+  background-color: #53bddc;
+}
+.api-block.method-post {
+  background-color: #d9fae4;
+  border: 1px solid #1bcd57;
+}
+.api-block.method-post .api-method {
+  background-color: #1bcd57;
+}
+.api-block.method-put {
+  background-color: #faf0c1;
+  border: 1px solid #f5cf18;
+}
+.api-block.method-put .api-method {
+  background-color: #f5cf18;
+}
+.api-block.method-delete {
+  background-color: #f4d0cd;
+  border: 1px solid #e83f34;
+}
+.api-block.method-delete .api-method {
+  background-color: #e83f34;
+}
+.api-block .href {
+  margin-right: 0.75rem;
+}
+.api-block .api-method {
+  display: inline-block;
+  margin-right: 0.75rem;
+  width: 3rem;
+  height: 1.125rem;
+  line-height: 1.125rem;
+  color: #fff;
+  border-radius: 2px;
+  text-align: center;
+}
+.api-block .toggle-expand,
+.api-block .api-detail-btn {
+  color: #4a90e2;
+  text-underline-position: below;
+}
+.api-block .toggle-expand {
+  margin-right: 0.5rem;
+}

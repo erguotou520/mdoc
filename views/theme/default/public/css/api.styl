@@ -1,0 +1,45 @@
+.api-block
+  padding 0 .75rem
+  height 1.875rem
+  line-height @height
+  border-radius 2px
+  font-size .75rem
+  & + .api-block
+    margin-top 1rem
+  &.method-get
+    background-color #CBECF5
+    border 1px solid #53BDDC
+    .api-method
+      background-color #53BDDC
+  &.method-post
+    background-color #D9FAE4
+    border 1px solid #1BCD57
+    .api-method
+      background-color #1BCD57
+  &.method-put
+    background-color #FAF0C1
+    border 1px solid #F5CF18
+    .api-method
+      background-color #F5CF18
+  &.method-delete
+    background-color #F4D0CD
+    border 1px solid #E83F34
+    .api-method
+      background-color #E83F34
+  .href
+    margin-right .75rem
+  .api-method
+    display inline-block
+    margin-right .75rem
+    width 3rem
+    height 1.125rem
+    line-height @height
+    color #fff
+    border-radius 2px
+    text-align center
+  .toggle-expand
+  .api-detail-btn
+    color #4A90E2
+    text-underline-position below
+  .toggle-expand
+    margin-right .5rem

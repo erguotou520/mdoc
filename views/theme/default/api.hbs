@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="static/css/api.css">
+<div id="app-navigation" class="flex">
+  <ul>
+    {{#each resources as |module|}}
+      <li><a href="#V0.1.0">{{module.name}}</a></li>
+    {{/each}}
+  </ul>
+</div>
+<div id="app-content" class="flex-1">
+  {{#each resources as |module moduleKey|}}
+    <div id="module-{{@index}}" class="module-wrapper">
+      {{#if module.restful}}
+        <div class="api-block method-get">
+          <div class="api-header flex flex-between">
+            <div class="api-left flex flex-cross-center">
+              <span class="href">#</span>
+              <span class="api-method">GET</span>
+              <span class="api-url">{{module.prefix}}</span>
+            </div>
+            <div class="api-right">
+              <a href class="toggle-expand">展开</a>
+              <a href class="api-detail-btn">详情</a>
+            </div>
+          </div>
+        </div>
+        <div class="api-block method-post">
+          <div class="api-header flex flex-between">
+            <div class="api-left flex flex-cross-center">
+              <span class="href">#</span>
+              <span class="api-method">POST</span>
+              <span class="api-url">{{module.prefix}}</span>
+            </div>
+            <div class="api-right">
+              <a href class="toggle-expand">展开</a>
+              <a href class="api-detail-btn">详情</a>
+            </div>
+          </div>
+        </div>
+        <div class="api-block method-put">
+          <div class="api-header flex flex-between">
+            <div class="api-left flex flex-cross-center">
+              <span class="href">#</span>
+              <span class="api-method">PUT</span>
+              <span class="api-url">{{module.prefix}}/:{{common.obj.restful.id}}</span>
+            </div>
+            <div class="api-right">
+              <a href class="toggle-expand">展开</a>
+              <a href class="api-detail-btn">详情</a>
+            </div>
+          </div>
+        </div>
+        <div class="api-block method-delete">
+          <div class="api-header flex flex-between">
+            <div class="api-left flex-cross-center">
+              <span class="href">#</span>
+              <span class="api-method">DELETE</span>
+              <span class="api-url">{{module.prefix}}/:{{common.obj.restful.id}}</span>
+            </div>
+            <div class="api-right">
+              <a href class="toggle-expand">展开</a>
+              <a href class="api-detail-btn">详情</a>
+            </div>
+          </div>
+        </div>
+      {{/if}}
+      {{#each module.resources as |resource resourceKey|}}
+        <div class="api-block method-{{resource.method}}">
+          <div class="api-header flex flex-between">
+            <div class="api-left flex flex-cross-center">
+              <span class="href">#</span>
+              <span class="api-method">{{resource.method}}</span>
+              <span class="api-url">{{module.prefix}}{{resourceKey}}</span>
+            </div>
+            <div class="api-right">
+              <a href class="toggle-expand">展开</a>
+              <a href class="api-detail-btn">详情</a>
+            </div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+  {{/each}}
+</div>

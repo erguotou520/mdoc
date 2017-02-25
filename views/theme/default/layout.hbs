@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>API文档</title>
+  <!-- <link rel="stylesheet" href="static/css/element-ui.css"> -->
+  <link rel="stylesheet" href="static/css/reset.css">
+  <link rel="stylesheet" href="static/css/flexble.css">
+  <link rel="stylesheet" href="static/css/common.css">
+  <script src="static/js/vue.min.js"></script>
+  <!-- <script src="static/js/element-ui.js"></script> -->
+</head>
+<body>
+  <div id="app" class="flex flex-column">
+    <header id="app-header" class="flex flex-main-center">
+      <div class="nav-menu flex flex-between">
+        <div class="logo flex flex-column flex-main-center">
+          <h1>MDoc</h1>
+          <h2>API document and mock server</h2>
+        </div>
+        <div class="navs flex">
+          <ul class="flex flex-1">
+            <li class="flex flex-1 flex-main-center flex-cross-center{{#if isHome}} active{{/if}}">
+              <a href="./">文档说明</a>
+            </li>
+            <li class="flex flex-1 flex-main-center flex-cross-center{{#if isApi}} active{{/if}}">
+              <a href="./api">API列表</a>
+            </li>
+            <li class="flex flex-1 flex-main-center flex-cross-center{{#if isHistory}} active{{/if}}">
+              <a href="./history">历史变更</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div id="app-container" class="flex flex-1">
+      {{{body}}}
+    </div>
+  </div>
+</body>
+<script>
+new Vue({
+  el: '#app',
+  data: {
+    activeIndex: '1'
+  },
+  methods: {
+
+  }
+})
+</script>
+</html>

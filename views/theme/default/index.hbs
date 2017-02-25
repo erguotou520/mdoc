@@ -1,12 +1,27 @@
-<!DOCTYPE html>
-<html lang="zh">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>API文档</title>
-</head>
-<body>
-<pre><code>{{common}}</code></pre>
-</body>
-</html>
+<!-- <link rel="stylesheet" href="static/css/index.css"> -->
+<div id="app-navigation" class="flex">
+  <ul>
+    <li><a href="#api_version">API版本</a></li>
+    <li><a href="#api_prefix">API前缀</a></li>
+    <li><a href="#api_desc">API说明</a></li>
+  </ul>
+</div>
+<div id="app-content" class="flex-1">
+  <h3><a class="href" href="#api_version">#</a>API版本</h3>
+  <p>当前API版本<span class="text-primary">{{common.obj.api_version}}</span></p>
+  <h3><a class="href" href="#api_prefix">#</a>API前缀</h3>
+  <p><span class="text-primary">{{common.obj.api_prefix}}</span></p>
+  <h3><a class="href" href="#api_desc">#</a>API说明</h3>
+  <p>
+    {{#each common.obj.descriptions as |value key|}}
+      <p>{{key}}</p>
+      {{#if value.length}}
+        <ul>
+          {{#each value}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      {{/if}}
+    {{/each}}
+  </p>
+</div>
